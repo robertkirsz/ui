@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Matches snapshots 1`] = `
+.c0 {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  background: #1ea7fd;
+  font-size: 14px;
+  padding: 11px 20px;
+}
+
+.c1 {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #333;
+  background: none;
+  box-shadow: rgba(0,0,0,0.15) 0 0 0 1px inset;
+  font-size: 14px;
+  padding: 11px 20px;
+}
+
+.c2 {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #333;
+  background: none;
+  box-shadow: rgba(0,0,0,0.15) 0 0 0 1px inset;
+  font-size: 12px;
+  padding: 10px 16px;
+}
+
+.c3 {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #333;
+  background: none;
+  box-shadow: rgba(0,0,0,0.15) 0 0 0 1px inset;
+  font-size: 16px;
+  padding: 12px 24px;
+}
+
+<div
+  data-testid="Container"
+>
+  <button
+    class="c0"
+  >
+    Button
+  </button>
+  <button
+    class="c1"
+  >
+    Button
+  </button>
+  <button
+    class="c2"
+  >
+    Button
+  </button>
+  <button
+    class="c1"
+  >
+    Button
+  </button>
+  <button
+    class="c3"
+  >
+    Button
+  </button>
+</div>
+`;
