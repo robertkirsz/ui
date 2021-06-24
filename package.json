@@ -1,0 +1,46 @@
+{
+  "name": "@robertkirsz/ui",
+  "version": "0.5.0",
+  "description": "UI components library that I use in my React apps",
+  "author": "Robert Kirsz <robert.kirsz@gmail.com> (https://robertkirsz.com)",
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://robertkirsz.github.io/ui",
+  "bugs": {
+    "url": "https://github.com/robertkirsz/ui/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertkirsz/ui.git"
+  },
+  "scripts": {
+    "test": "jest",
+    "prettier": "prettier . --check --write"
+  },
+  "keywords": [
+    "components-library",
+    "react",
+    "styled-components"
+  ],
+  "dependencies": {},
+  "peerDependencies": {
+    "react": ">=17.0.2",
+    "react-dom": ">=17.0.2",
+    "styled-components": ">=5.3.0"
+  },
+  "devDependencies": {
+    "@types/jest": "26.0.23",
+    "@types/node": "15.12.4",
+    "@types/react": "17.0.11",
+    "@types/react-dom": "17.0.8",
+    "@types/styled-components": "5.1.10",
+    "@types/testing-library__react": "10.2.0",
+    "jest": "27.0.5",
+    "jest-styled-components": "7.0.4",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "styled-components": "5.3.0",
+    "ts-jest": "27.0.3",
+    "ts-node": "10.0.0",
+    "typescript": "4.3.4"
+  }
+}
