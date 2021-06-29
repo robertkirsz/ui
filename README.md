@@ -37,9 +37,11 @@ If you don't see Intellisense suggestions for components' props in your editor, 
 
 ## Other styling solutions
 
-I'm using [styled-components](https://styled-components.com/) as my styling solution of choice for the `main` branch, but this library works with CSS approaches as well.
+I'm using [styled-components](https://styled-components.com/) on the `main` branch as my styling approach of choice for React apps, but this library works with other CSS solutions as well.
 
 Check out the [css-modules](https://github.com/robertkirsz/ui/tree/css-modules) branch to see how to make it work with CSS Modules.
+
+TODO: branches with SASS and plain CSS versions
 
 ## Development
 

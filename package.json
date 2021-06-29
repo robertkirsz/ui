@@ -1,6 +1,6 @@
 {
   "name": "@robertkirsz/ui",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "UI components library that I use in my React apps",
   "author": "Robert Kirsz <robert.kirsz@gmail.com> (https://robertkirsz.com)",
   "license": "GPL-3.0-or-later",
