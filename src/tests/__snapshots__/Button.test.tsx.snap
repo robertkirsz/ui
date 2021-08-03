@@ -3,7 +3,13 @@
 exports[`Button Matches snapshots 1`] = `
 .c0 {
   border: none;
+  outline: none;
+  font: inherit;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: white;
   border-radius: 4px;
   background: #1ea7fd;
@@ -13,35 +19,53 @@ exports[`Button Matches snapshots 1`] = `
 
 .c1 {
   border: none;
+  outline: none;
+  font: inherit;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #333;
   border-radius: 4px;
   background: none;
-  box-shadow: rgba(0,0,0,0.15) 0 0 0 1px inset;
   font-size: 14px;
   padding: 11px 20px;
+  box-shadow: rgba(0,0,0,0.15) 0 0 0 1px inset;
 }
 
 .c2 {
   border: none;
+  outline: none;
+  font: inherit;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #333;
   border-radius: 4px;
   background: none;
-  box-shadow: rgba(0,0,0,0.15) 0 0 0 1px inset;
   font-size: 12px;
   padding: 10px 16px;
+  box-shadow: rgba(0,0,0,0.15) 0 0 0 1px inset;
 }
 
 .c3 {
   border: none;
+  outline: none;
+  font: inherit;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #333;
   border-radius: 4px;
   background: none;
-  box-shadow: rgba(0,0,0,0.15) 0 0 0 1px inset;
   font-size: 16px;
   padding: 12px 24px;
+  box-shadow: rgba(0,0,0,0.15) 0 0 0 1px inset;
 }
 
 <div

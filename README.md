@@ -40,7 +40,49 @@ All available components with usage examples and their documentation can be foun
 
 ## Drak mode and custom themes
 
-🚧 Writing in progress
+To use dark mode styles, wrap a particular part of your app with `<ThemeProvider>` and pass `darkMode` prop to it.
+
+```js
+<ThemeProvider darkMode>
+  <PartsThatNeedToBeInDarkMode />
+</ThemeProvider>
+```
+
+If you want to use a custom theme, you can pass your values as `theme` prop to `<ThemeProvider>`:
+
+```js
+const customTheme = {
+  borderRadius: '0',
+  colors: {
+    text: 'red',
+    primary: 'green',
+    secondary: 'blue'
+  }
+}
+
+<ThemeProvider theme={customTheme}>
+  <PartsThatWillReceiveCustomTheme />
+</ThemeProvider>
+```
+
+You can find the theme structure and values in [src/theme.ts](https://github.com/robertkirsz/ui/blob/main/src/theme.ts) file.
+
+You can also `import { defaultTheme } from '@robertkirsz/ui'` and use it as a base for some more precise value-overwrites.
+
+```js
+import { defaultTheme } from '@robertkirsz/ui'
+
+const customTheme = {
+  colors: {
+    ...defaultTheme.colors,
+    secondary: 'yellow'
+  }
+}
+```
+
+## BasicStyles
+
+You can `import { BasicStyles } from '@robertkirsz/ui'` and put it somewhere in your app to get some core styles and basic typography.
 
 ## Troubleshooting
 

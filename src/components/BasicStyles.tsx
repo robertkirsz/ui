@@ -112,18 +112,6 @@ const BasicStyles = createGlobalStyle`
     color: inherit;
   }
 
-  button {
-    color: inherit;
-    font: inherit;
-    padding: 0;
-    background: none;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    user-select: none;
-    text-decoration: underline;
-  }
-
   @font-face {
     font-family: 'Space Mono';
     font-style: normal;
