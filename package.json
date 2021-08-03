@@ -28,7 +28,7 @@
     "prepublish": "yarn build",
     "postpublish": "rm -rf dist",
     "test": "jest",
-    "prettier": "prettier . --check --write"
+    "prettier": "prettier . --check --write --ignore-path .gitignore"
   },
   "keywords": [
     "components-library",

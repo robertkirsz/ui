@@ -7,13 +7,15 @@ export type Props = {
 
 export default styled.button<Props>`
   border: none;
-  border-radius: 4px;
   cursor: pointer;
 
-  ${({ primary = false, size = 'medium' }) => css`
-    color: ${primary ? 'white' : '#333'};
-    background: ${primary ? '#1ea7fd' : 'none'};
+  ${({ primary = false, size = 'medium', theme }) => css`
+    color: ${primary ? 'white' : theme.colors.text};
+    border-radius: ${theme.borderRadius};
+    background: ${primary ? theme.colors.primary : theme.colors.secondary};
+
     ${!primary && 'box-shadow: rgba(0, 0, 0, 0.15) 0 0 0 1px inset;'}
+
     ${size &&
     {
       small: 'font-size: 12px; padding: 10px 16px;',

@@ -1,3 +1,11 @@
-export { default as Button } from './Button'
-export { default as Div } from './Div'
-export { default as ThemeProvider } from './ThemeProvider'
+import BasicStyles from './BasicStyles'
+import Button from './Button'
+import Div from './Div'
+import ThemeProvider from './ThemeProvider'
+
+export default {
+  BasicStyles,
+  Button,
+  Div,
+  ThemeProvider
+}

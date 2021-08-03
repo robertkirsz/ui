@@ -18,30 +18,33 @@ Make sure you have latest `react`, `react-dom` and `styled-components` installed
 ## Usage
 
 ```js
-import { Button } from '@robertkirsz/ui'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { ThemeProvider, Button } from '@robertkirsz/ui'
 
-function App() {
-  return (
-    <Button primary size="small">
-      Hello
-    </Button>
-  )
-}
+const App = () => (
+  <Button primary size="small">
+    Hello
+  </Button>
+)
+
+ReactDOM.render(
+  <ThemeProvider>
+    <App />
+  </ThemeProvider>,
+  document.getElementById('root')
+)
 ```
 
 All available components with usage examples and their documentation can be found [here](https://robertkirsz.github.io/ui).
 
+## Drak mode and custom themes
+
+🚧 Writing in progress
+
 ## Troubleshooting
 
 If you don't see Intellisense suggestions for components' props in your editor, make sure you have `@types/react` and `@types/styled-components` installed as your devDependencies.
-
-## Other styling solutions
-
-I'm using [styled-components](https://styled-components.com/) on the `main` branch as my styling approach of choice for React apps, but this library works with other CSS solutions as well.
-
-Check out the [css-modules](https://github.com/robertkirsz/ui/tree/css-modules) branch to see how to make it work with CSS Modules.
-
-TODO: branches with SASS and plain CSS versions
 
 ## Development
 
