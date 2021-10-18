@@ -51,6 +51,9 @@ const stuff = {
   selfCenter: 'align-self: center;',
   selfBaseline: 'align-self: baseline;',
   selfStretch: 'align-self: stretch;',
+  gap: (value: DuoType) => `gap: ${withUnit(value)};`,
+  rowGap: (value: DuoType) => `row-gap: ${withUnit(value)};`,
+  columnGap: (value: DuoType) => `column-gap: ${withUnit(value)};`,
   // Size
   width: (value: DuoType) => `width: ${withUnit(value)};` /* Tested */,
   height: (value: DuoType) => `height: ${withUnit(value)};` /* Tested */,
@@ -279,6 +282,9 @@ export type Props = {
   selfCenter?: boolean
   selfBaseline?: boolean
   selfStretch?: boolean
+  gap?: number | string
+  rowGap?: number | string
+  columnGap?: number | string
   // Size
   width?: number | string
   height?: number | string
