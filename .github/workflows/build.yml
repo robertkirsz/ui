@@ -1,0 +1,25 @@
+name: Test and build the library
+
+on: pull_request
+
+jobs:
+  test-and-build-the-library:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - uses: ./.github/actions/setup-node
+
+      - name: Install dependencies
+        env:
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+        run: yarn --frozen-lockfile
+
+      - name: Run tests
+        run: yarn test
+
+      - name: Create production build
+        run: yarn build

@@ -1,14 +1,5 @@
-import ThemeProvider from '../src/components/ThemeProvider'
-import BasicStyles from '../src/components/BasicStyles'
-
-export const decorators = [
-  Story => (
-    <ThemeProvider>
-      <BasicStyles />
-      <Story />
-    </ThemeProvider>
-  )
-]
+import '../src/styles/fonts.css'
+import '../src/styles/base.css'
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },

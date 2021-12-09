@@ -1,0 +1,24 @@
+.button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+}
+
+.primary {
+  padding: 22px 50px;
+  background: var(--mi-green);
+  color: var(--mi-text-color);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.secondary {
+  padding: 18px 50px;
+  background: transparent;
+  border: 1px solid #000;
+  color: var(--mi-light-gray);
+  font-size: 22px;
+  line-height: 27px;
+}

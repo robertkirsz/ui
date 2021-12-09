@@ -1,29 +1,19 @@
-import styled, { css } from 'styled-components'
+import type { ButtonHTMLAttributes } from 'react'
+import type { Theme } from '../types'
+import React from 'react'
+import { cn } from '../utils'
+import styles from './Button.module.css'
 
 export type Props = {
-  primary?: boolean
-  size?: 'small' | 'medium' | 'large'
+  secondary?: boolean
+} & Theme &
+  ButtonHTMLAttributes<HTMLButtonElement>
+
+export default function Button({ secondary, ...props }: Props) {
+  return (
+    <button
+      className={cn(styles.button, secondary ? styles.secondary : styles.primary)}
+      {...props}
+    />
+  )
 }
-
-export default styled.button<Props>`
-  border: none;
-  outline: none;
-  font: inherit;
-  cursor: pointer;
-  user-select: none;
-
-  ${({ primary = false, size = 'medium', theme }) => css`
-    color: ${primary ? 'white' : theme.colors.text};
-    border-radius: ${theme.borderRadius};
-    background: ${primary ? theme.colors.primary : theme.colors.secondary};
-
-    ${size &&
-    {
-      small: 'font-size: 12px; padding: 10px 16px;',
-      medium: 'font-size: 14px; padding: 11px 20px;',
-      large: 'font-size: 16px; padding: 12px 24px;'
-    }[size]}
-
-    ${!primary && 'box-shadow: rgba(0, 0, 0, 0.15) 0 0 0 1px inset;'}
-  `}
-`

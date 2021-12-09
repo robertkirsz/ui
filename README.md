@@ -60,7 +60,7 @@ const customTheme = {
   }
 }
 
-<ThemeProvider theme={customTheme}>
+;<ThemeProvider theme={customTheme}>
   <PartsThatWillReceiveCustomTheme />
 </ThemeProvider>
 ```
