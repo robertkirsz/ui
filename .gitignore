@@ -1,22 +1,9 @@
-# Logs
-*.log
-npm-debug.log*
+.DS_Store
+.vscode
+coverage
+dist
+node_modules
+stats.html
+storybook-static
 yarn-debug.log*
 yarn-error.log*
-# Coverage directory used by tools like istanbul
-coverage
-*.lcov
-# Dependency directories
-node_modules
-# Optional npm cache directory
-.npm
-# Optional eslint cache
-.eslintcache
-# Yarn Integrity file
-.yarn-integrity
-# Build directory
-dist
-# macOS files
-.DS_Store
-# Local editor config
-.vscode
